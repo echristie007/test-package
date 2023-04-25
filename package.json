@@ -4,10 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "storybook-live": "start-storybook -p 6006",
+        "storybook-live": "storybook dev -p 6006",
         "build": "rm -rf dist && babel src -d dist --env-name production --copy-files",
         "test": "jest",
-        "storybook-build-static": "build-storybook",
+        "storybook-build-static": "storybook build",
         "test-ci": "jest --ci --silent"
     },
     "repository": {
@@ -39,11 +39,10 @@
         "@bluecateng/pelagos": "^10.3.0",
         "@bluecateng/pelagos-forms": "^4.0.0",
         "@bluecateng/stylelint-config": "^4.0.1",
-        "@storybook/addon-a11y": "^6.5.15",
-        "@storybook/addon-essentials": "^6.5.15",
-        "@storybook/builder-webpack5": "^6.5.15",
-        "@storybook/manager-webpack5": "^6.5.15",
-        "@storybook/react": "^6.5.15",
+        "@storybook/addon-a11y": "^7.0.7",
+        "@storybook/addon-essentials": "^7.0.7",
+        "@storybook/react": "^7.0.7",
+        "@storybook/react-webpack5": "^7.0.7",
         "babel-loader": "^8.3.0",
         "css-loader": "^6.7.3",
         "enzyme": "^3.11.0",
@@ -62,7 +61,8 @@
         "style-loader": "^3.3.1",
         "stylelint": "^14.9.1",
         "stylelint-config-prettier": "^9.0.3",
-        "stylelint-config-standard": "^26.0.0"
+        "stylelint-config-standard": "^26.0.0",
+        "storybook": "^7.0.7"
     },
     "lint-staged": {
         "*.{js,ts,tsx}": [
