@@ -27,7 +27,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
+          name: github-pages
           path: build/storybook
+          retention-days: 1
 
   deploy:
     name: "Deploy storybook on GitHub pages"
